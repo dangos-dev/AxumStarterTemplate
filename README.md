@@ -2,8 +2,6 @@
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 
-## Overview
-
 A Rust Axum web server template demonstrating basic REST API endpoints. Built using the Axum framework for async web
 services in Rust.
 
