@@ -1,4 +1,5 @@
 use axum::{Router, routing::get};
+use dotenvy::dotenv;
 use std::env;
 use tokio::net::TcpListener;
 
@@ -8,6 +9,8 @@ async fn hello() -> &'static str {
 
 #[tokio::main]
 async fn main() {
+    dotenv().ok();
+
     let app = Router::new().route("/", get(hello));
 
     // Get port from environment or default to 1208
